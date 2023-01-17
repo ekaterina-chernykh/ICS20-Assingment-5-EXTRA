@@ -33,7 +33,6 @@ class Program
             pii = pii + aLittleBit;
             counter++;
         }
-        
         Console.Clear();
         Console.WriteLine("Your PI is: " + pii);
         Console.WriteLine("\nDone.");
