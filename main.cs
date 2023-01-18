@@ -11,7 +11,7 @@ class Program
     {
         int numberOfLoops;
         int counter = 0;
-        int denominator = -1;
+        double denominator = -1;
         double pii = 0;
 
         Console.WriteLine(" ");
@@ -26,15 +26,16 @@ class Program
 
         while (counter < numberOfLoops)
         {
-            int numerator = 4;
+            double numerator = 4;
             denominator = denominator + 2;
             double multiply = Math.Pow(-1, counter);
             double aLittleBit = (numerator / denominator) * multiply;
             pii = pii + aLittleBit;
             counter++;
         }
+        
         Console.Clear();
-        Console.WriteLine("Your PI is: " + pii);
+        Console.WriteLine("Your PI is: " + pii.ToString("0.00"));
         Console.WriteLine("\nDone.");
     }
 }
